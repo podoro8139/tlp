@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Less Parking (TLP) - AIで進化する、スマートな駐車場ビジネス</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #396180;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        header {
+            background: #305f7a;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #4a90e2 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        .highlight {
+            color: #4a90e2;
+            font-weight: bold;
+        }
+        #showcase {
+            min-height: 400px;
+            background: url('path_to_your_hero_image.jpg') no-repeat center center/cover;
+            text-align: center;
+            color: #ffffff;
+        }
+        #showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        #showcase p {
+            font-size: 20px;
+        }
+        .button {
+            display: inline-block;
+            font-size: 18px;
+            color: #ffffff;
+            background: #4a90e2;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        #features, #pricing, #usage, #faq, #contact {
+            padding: 40px 0;
+            background: #ffffff;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .feature {
+            margin-bottom: 30px;
+        }
+        .feature h3 {
+            color: #305f7a;
+        }
+        .pricing-table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .pricing-table th, .pricing-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        .pricing-table th {
+            background-color: #f2f2f2;
+        }
+        .usage-flow {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .usage-step {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+        }
+        .usage-step img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        form button {
+            background: #4a90e2;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Three Less</span> Parking</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#features">特徴</a></li>
+                    <li><a href="#pricing">料金</a></li>
+                    <li><a href="#usage">利用イメージ</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>AIで進化する、スマートな駐車場ビジネス</h1>
+            <p>AIカメラと QR決済で、シンプル・スマート・ローコスト</p>
+            <a href="#contact" class="button">お問い合わせ</a>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <h2>Three Less Parking（TLP）の特徴</h2>
+            <div class="feature">
+                <h3>土木工事不要</h3>
+                <p>大規模な工事は不要。AIカメラを設置するだけで運用開始できます。</p>
+            </div>
+            <div class="feature">
+                <h3>精算機不要</h3>
+                <p>高額な精算機は過去のもの。QRコードで簡単に決済できます。</p>
+            </div>
+            <div class="feature">
+                <h3>現地メンテナンス不要</h3>
+                <p>現金回収や機器メンテナンスの手間から解放されます。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <div class="container">
+            <h2>料金プラン</h2>
+            <table class="pricing-table">
+                <tr>
+                    <th colspan="2">初期導入コスト</th>
+                </tr>
+                <tr>
+                    <td>基本料金</td>
+                    <td>100,000円</td>
+                </tr>
+                <tr>
+                    <td>カメラ1台あたり</td>
+                    <td>10,000円</td>
+                </tr>
+                <tr>
+                    <th colspan="2">月額コスト</th>
+                </tr>
+                <tr>
+                    <td>基本使用料（駐車場1箇所あたり）</td>
+                    <td>5,000円</td>
+                </tr>
+                <tr>
+                    <td>カメラ利用料（1台あたり）</td>
+                    <td>10,000円</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section id="usage">
+        <div class="container">
+            <h2>ご利用イメージ</h2>
+            <div class="usage-flow">
+                <div class="usage-step">
+                    <img src="file:///C:/Users/tani-/OneDrive/デスクトップ/tlp/tlp1.png" alt="入庫イメージ">
+                    <h3>入庫</h3>
+                    <p>車両が入庫したことをAIカメラが察知し、車番を認証。</p>
+                </div>
+                <div class="usage-step">
+                    <img src="file:///C:/Users/tani-/OneDrive/デスクトップ/tlp/tlp2.png" alt="精算イメージ">
+                    <h3>精算</h3>
+                    <p>QRコードを読み込みスマートフォンから簡単WEB精算。</p>
+                </div>
+                <div class="usage-step">
+                    <img src="file:///C:/Users/tani-/OneDrive/デスクトップ/tlp/tlp3.png" alt="出庫イメージ">
+                    <h3>出庫</h3>
+                    <p>車両が車室から出庫した事を、AIカメラで検知。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq">
+        <div class="container">
+            <h2>よくある質問</h2>
+            <h3>Q: AIカメラの精度は？</h3>
+            <p>A: 最新のAI技術により、高精度な車両検知が可能です。</p>
+            <h3>Q: QR決済の安全性は？</h3>
+            <p>A: 最新のセキュリティ対策を施しており、安全な決済が可能です。</p>
+            <h3>Q: 既存の駐車場にも導入できる？</h3>
+            <p>A: はい、既存の駐車場にも簡単に導入できます。詳細はお問い合わせください。</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>お問い合わせ</h2>
+            <form>
+                <input type="text" name="name" placeholder="お名前" required>
+                <input type="email" name="email" placeholder="メールアドレス" required>
+                <textarea name="message" placeholder="お問い合わせ内容" required></textarea>
+                <button type="submit" class="button">送信</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Three Less Parking. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
